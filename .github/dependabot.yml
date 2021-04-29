@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: react-native
+    versions:
+    - 0.63.4
+  - dependency-name: react-navigation
+    versions:
+    - 4.4.3
